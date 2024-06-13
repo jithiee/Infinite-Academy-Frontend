@@ -10,6 +10,8 @@ function App() {
   <h3>amal </h3>
 <h3>jithin update</h3>
 <h6>new updates </h6>
+<h1>hohohohoho</h1>
+
 
     </>
   )
