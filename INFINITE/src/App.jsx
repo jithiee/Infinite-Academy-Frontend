@@ -9,6 +9,7 @@ function App() {
   <h1>newwwwww</h1>
   <h3>amal </h3>
 <h3>jithin update</h3>
+<h6>new updates </h6>
 
     </>
   )
