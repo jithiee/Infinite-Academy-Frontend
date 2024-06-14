@@ -2,6 +2,7 @@ import React from 'react'
 // import './pages/login/LoginPage.css'
 
 
+
 const Login = () => {
   return (
     <div className="bg-white min-h-screen flex items-center justify-center">
@@ -15,6 +16,7 @@ const Login = () => {
           <div className="flex justify-center mt-10 lg:mt-14">
             {/* <img src="https://iqwing.s3.ap-south-1.amazonaws.com/ssibhota/results/2023-04/1680350152649.jpg" className="rounded-br-100xl w-full lg:w-96" alt="" /> */}
           </div>
+   
         </div>
         <div className="bg-[#0099ff] flex items-center justify-center w-full lg:w-1/2 p-6 lg:p-10">
           <div className="w-full max-w-md">

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 // import search_icon from  '../../../../assets/images/search-icon.png';
-// import logo from '../../assets/images/schoolslogo.jpg';
+import logImage from '../../../assets/images/schoolslogo.jpg';
+
+
 
 
 
@@ -10,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='bg-white w-full h-12 flex items-center justify-between border-b border-solid border-b-slate-200 fixed'>
       <div className='w-1/3 flex items-center justify-center md:justify-center'>
-        <img src='' alt="logo" className='w-44 h-10' />
+        <img src={logImage} alt="logo" className='w-44 h-10' />
       </div>
       <div className='hidden md:flex md:w-1/3 md:justify-evenly md:items-center'>
         <ul className='text-gray-700 font-semibold cursor-pointer'>Home</ul>
