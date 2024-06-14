@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import image from 'assets/images/schools logo.jpg'
-// import search_icon from  '../../../../assets/images/search-icon.png';
+import search_icon from '../../../assets/images/search-icon.png'
+import logoImage from '../../../assets/images/schools-logo.jpg';
 
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div className='bg-white w-full h-12 flex items-center justify-between border-b border-solid border-b-slate-200 fixed'>
       <div className='w-1/3 flex items-center justify-center md:justify-center'>
-        <img src={image} alt="logo" className='w-44 h-10' />
+        <img src={logoImage} alt="logo" className='w-44 h-10' />
       </div>
       <div className='hidden md:flex md:w-1/3 md:justify-evenly md:items-center'>
         <ul className='text-gray-700 font-semibold cursor-pointer'>Home</ul>
@@ -25,7 +25,7 @@ const Navbar = () => {
             className='w-44 h-6 p-2 border-0 rounded-l-full focus:outline-none'
           />
           <button className='w-10 h-10 rounded-full flex items-center justify-center'>
-            {/* <img src={search_icon} alt="search icon" className='w-8 h-8' /> */}
+            <img src={search_icon} alt="search icon" className='w-8 h-8' />
           </button>
         </div>
         <button className='bg-green-200 rounded-full w-16 h-8 hidden md:flex items-center pl-2'>logout</button>
