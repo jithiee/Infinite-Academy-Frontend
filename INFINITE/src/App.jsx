@@ -1,4 +1,5 @@
-import Navbar from "./components/layout/navbars/Navbar"
+
+import Navbar from "./layouts/navbars/Navbar"
 import Login from "./pages/login/LoginPage"
 
 
