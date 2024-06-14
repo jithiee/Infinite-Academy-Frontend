@@ -1,3 +1,6 @@
+import Navbar from "./components/layout/navbars/Navbar"
+import Login from "./pages/login/LoginPage"
+
 
 
 function App() {
@@ -13,6 +16,8 @@ function App() {
 <h3>jithin update</h3>
 <h6>new updates </h6>
 <h1>hohohohoho</h1>
+<Navbar/>
+<Login/>
 
 
     </>
