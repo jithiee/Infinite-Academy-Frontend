@@ -2,6 +2,7 @@ import React from 'react';
 
 import { TypeAnimation } from 'react-type-animation';
 import HeaderAside from './HeaderAside';
+import { Link } from 'react-router-dom';
 
 
 const HeaderSection = () => {
@@ -58,7 +59,20 @@ const HeaderSection = () => {
                         </div>
 
                         <div className='flex flex-col md:flex-row w-[80%] h-11 mx-auto mt-10 md:ml-32'>
-                            <button className='bg-green-500 px-8 py-2 md:px-16 md:py-2 rounded-full'>Register Now</button>
+
+
+                            <button >
+                                
+                                <Link
+                                to='register'
+                               className='bg-green-500 px-8 py-2 md:px-16 md:py-2 rounded-full no-underline text-black'
+
+                                >
+                                
+                                Register Now
+                                </Link>
+                                
+                            </button>
 
                         </div>
 
