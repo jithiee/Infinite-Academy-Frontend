@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import logoImage from '../../assets/images/schools-logo.jpg';
 import search_icon from '../../assets/images/search-icon.png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -92,9 +92,18 @@ const Navbar = () => {
           </button>
         </div>
 
-      
-        {/* <button className='bg-green-200 rounded-full w-24 h-8 hidden md:flex items-center pl-2 '>logout</button> */}
-        <button className='bg-black  text-white  ml-4 pl-16 pr-16 py-2  hidden md:flex items-center rounded-full  ' > Login  </button>
+         <button  > 
+          <Link
+           to='login'
+          className='bg-black  text-white  ml-4 pl-16 pr-16 py-2  hidden md:flex items-center rounded-full  no-underline '
+          
+          >
+          Login
+          </Link>
+            </button>
+          
+          
+          
         <button
           className='w-16 h-8 ml-2 md:hidden flex items-center justify-center'
           onClick={() => setIsOpen(!isOpen)}

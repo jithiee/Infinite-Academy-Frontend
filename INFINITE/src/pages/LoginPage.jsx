@@ -3,10 +3,13 @@ import LoginForm from '../features/authentication/components/LoginForm';
 
 const LoginPage = () => {
   return (
-    <div>
-      
+    <>
+    
       <LoginForm/>
-    </div>
+
+    </>
+      
+
   );
 }
 
