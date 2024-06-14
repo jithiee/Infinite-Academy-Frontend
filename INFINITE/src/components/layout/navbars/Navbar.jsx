@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-
-
 import logoImage from '../../../assets/images/schools-logo.jpg';
-
+import search_icon from '../../../assets/images/search-icon.png'
 
 
 
