@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const axios = () => {
   return (
     <div>
-      
+      <h1>llalal</h1>
     </div>
   );
 }
 
-export default Footer;
+export default axios;
