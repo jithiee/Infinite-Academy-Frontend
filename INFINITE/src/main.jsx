@@ -6,6 +6,8 @@ import NavFooter from './layoutmainpages/NavFooter.jsx'
 import HomePage from './pages/HomePage.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './features/about/components/About.jsx'
+import Gallery from './features/gallery/components/Gallery.jsx'
+import Post from './features/posts/components/Post.jsx'
 
 
 
@@ -15,6 +17,8 @@ const router = createBrowserRouter(
     <Route path='/' element={<NavFooter/>}  >  
         <Route path='' element={<HomePage/>}  />
         <Route path='about' element={<About/>} />
+        <Route path='gallery' element={<Gallery/>} />
+        <Route path='posts' element={<Post/>} />
 
     </Route>
   ),
