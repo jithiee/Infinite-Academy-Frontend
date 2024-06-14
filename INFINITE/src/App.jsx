@@ -1,6 +1,7 @@
 
 import Navbar from "./layouts/navbars/Navbar"
-import Login from "./pages/login/LoginPage"
+import LoginPage from "./pages/LoginPage"
+
 
 
 
@@ -11,7 +12,7 @@ function App() {
     <>
 
 <Navbar/>
-<Login/>
+{/* <LoginPage/> */}
 
 
     </>
