@@ -3,10 +3,11 @@ import RegistrationForm from '../features/authentication/components/Registration
 
 const RegistrationPage = () => {
   return (
-<>
+    <>
 
-<RegistrationForm/>
-</>
+      <RegistrationForm/>
+
+    </>
   );
 }
 

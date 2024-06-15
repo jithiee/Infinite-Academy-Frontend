@@ -3,12 +3,11 @@ import HeaderSection from '../features/home/components/HeaderSection';
 
 const HomePage = () => {
   return (
-<>
-<HeaderSection/>
-</>
+    <>
 
-
-   
+      <HeaderSection/>
+      
+    </>  
   );
 }
 
