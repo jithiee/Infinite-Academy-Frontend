@@ -1,11 +1,9 @@
-import React from 'react'
-// import './pages/login/LoginPage.css'
+import React from 'react';
 
-
-
-const Login = () => {
+const LoginForm = () => {
   return (
-    <div className="bg-white min-h-screen flex items-center justify-center">
+    <div>
+       <div className="bg-white min-h-1 flex items-center justify-center">
       <div className="bg-[#0099ff] h-auto w-full lg:w-3/5 lg:h-96 flex flex-col-reverse lg:flex-row mx-auto mt-10 lg:mt-28 rounded-lg shadow-lg">      
         <div className="w-full lg:w-1/2 bg-[#34D399] rounded-lg lg:rounded-br-100xl p-6 lg:p-10 mt-10 lg:mt-0">
           <div className="flex flex-col items-center lg:items-start">
@@ -43,7 +41,9 @@ const Login = () => {
         </div>
       </div>
   </div>
-  )
+      
+    </div>
+  );
 }
 
-export default Login 
+export default LoginForm;
