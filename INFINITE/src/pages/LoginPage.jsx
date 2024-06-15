@@ -8,8 +8,6 @@ const LoginPage = () => {
       <LoginForm/>
 
     </>
-      
-
   );
 }
 

@@ -13,11 +13,10 @@ const HeaderSection = () => {
                 {/* first main ================ */}
                 <div className='w-full lg:w-[60%] h-auto'>
                     <div className='w-full h-auto mx-auto md:h-[60rem]'>
-                        <div className='w-[80%] h-10 mx-auto mt-4 md:ml-36 md:mt-10'>
-                            <div className="flex items-center w-10 h-10 bg-white border rounded-full">
+                        <div className='w-[80%] h-10 mx-auto mt-4 md:ml-36 md:mt-10 '>
+                            <div className="flex items-center w-10 h-10 bg-white w-auto px-2">
                                 <img className="w-10 h-10 bg-white border rounded-full" src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                                <div className="ml-5 whitespace-nowrap"> WELCOME TO INFINITE HORIZONS ACADEMY </div>
-                            </div>
+                                <div className="ml-2 md:ml-5 text-sm md:text-base lg:text-lg xl:text-xl">WELCOME TO INFINITE HORIZONS ACADEMY</div>                            </div>
                         </div>
 
                         <div className='w-[80%] h-auto mx-auto mt-8 md:ml-32 space-y-4'>
