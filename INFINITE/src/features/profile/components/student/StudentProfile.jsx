@@ -4,6 +4,7 @@ import Sidebar from "../../../../layouts/sidebar/Sidebar"
 import StudentDashboard from '../student/StudentDashboard';
 import StudentMark from '../student/StudentMark';
 import StudentAttendence from '../student/StudentAttendence'
+import LeaveLetterForm from './LeaveLetterForm';
 
 const Profile = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,7 +43,7 @@ const Profile = () => {
               <button onClick={toggleSidebar} className="text-2xl lg:hidden mr-4">
                 <AiOutlineMenu />
               </button>
-              <div className='pl-4'>
+              <div className='pl-4 ' >
                 Hi, Student Name <br /> Welcome to School Name
               </div>
             </div>
@@ -96,6 +97,7 @@ const Profile = () => {
            {activeComponent === 'dashboard' && <StudentDashboard/>}
            {activeComponent === 'mark' && <StudentMark/>}
            {activeComponent === 'attendence' && <StudentAttendence/>}
+           {activeComponent === 'leaveform' && <LeaveLetterForm/>}
 
       </div>
     </div>

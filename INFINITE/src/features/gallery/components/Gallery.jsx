@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 const photos = [
-    'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',
-    'https://source.unsplash.com/random/800x600?nature,2',
-    'https://source.unsplash.com/random/800x600?nature,3',
-    'https://source.unsplash.com/random/800x600?nature,4',
-    'https://source.unsplash.com/random/800x600?nature,5',
-    'https://source.unsplash.com/random/800x600?nature,6',
+    'https://images.indianexpress.com/2017/08/student1.jpg?w=728',
+    'https://t4.ftcdn.net/jpg/05/52/94/89/360_F_552948967_rfWkVCstu3t9ypSnpt2ZePVnuqoi6D6o.jpg',
+    'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/coaching.jpeg?size=690:388',
+
 ];
 
 const Gallery = () => {
