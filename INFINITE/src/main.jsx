@@ -12,6 +12,7 @@ import PostForm from './features/posts/components/PostForm.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import RegistrationPage from './pages/RegistrationPage.jsx'
 import StudentProfilePage from './pages/StudentProfilePage.jsx'
+import LeaveLetterForm from './features/profile/components/student/LeaveLetterForm.jsx'
 
 
 
@@ -32,7 +33,9 @@ const router = createBrowserRouter(
     </Route>
 
     <Route path='postform' element={<PostForm/>} />
+
     <Route path='studentprofile' element={<StudentProfilePage/>}/>
+   
 
    </Route>
     

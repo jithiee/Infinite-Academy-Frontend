@@ -22,7 +22,7 @@ const Navbar = () => {
   }, [searchRef]);
 
   return (
-    <div className='bg-white w-full h-16 flex items-center justify-between border-b border-solid border-b-slate-200 sticky top-0 z-10'>
+    <div className='bg-white w-full h-16 flex items-center justify-between border-b border-solid border-b-slate-200 sticky top-0 z-10 '>
       <div className='w-80 flex items-center justify-center md:justify-center'>
         <img src={logoImage} alt="logo" className='w-44 h-10' />
       </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
             <NavLink
               to='/'
               className={({ isActive }) =>
-                `cursor-pointer font-semibold no-underline ${isActive ? "text-blue-600" : "text-gray-700"}`
+                `cursor-pointer  font-semibold no-underline ${isActive ? "text-blue-600" : "text-gray-700"}`
               }
             >
               Home
