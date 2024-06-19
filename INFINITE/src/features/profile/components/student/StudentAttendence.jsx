@@ -1,6 +1,6 @@
 import React from 'react'
 
-const studentattendence = () => {
+const StudentAttendence = () => {
   return (
     <div className='bg-blue-500 w-full h-screen rounded-lg'>
     <div className='bg-pink-200 w-full h-1/6 flex rounded-lg'>
@@ -24,4 +24,4 @@ const studentattendence = () => {
   )
 }
 
-export default studentattendence
+export default StudentAttendence

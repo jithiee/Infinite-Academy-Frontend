@@ -14,6 +14,10 @@ import RegistrationPage from './pages/RegistrationPage.jsx'
 import StudentProfilePage from './pages/StudentProfilePage.jsx'
 import Contact from './features/Contact/components/contact.jsx'
 
+import ParentProfile from './features/profile/components/parent/ParentProfile.jsx'
+import TeacherProfile from './features/profile/components/teacher/TeacherProfile.jsx'
+
+
 
 
 const router = createBrowserRouter(
@@ -36,6 +40,10 @@ const router = createBrowserRouter(
     <Route path='postform' element={<PostForm/>} />
 
     <Route path='studentprofile' element={<StudentProfilePage/>}/>
+    <Route path='parentprofile' element={<ParentProfile/>}/>
+    <Route path='teacherprofile' element={<TeacherProfile isClassTeacher={true}/>}/>
+
+
    
 
    </Route>
