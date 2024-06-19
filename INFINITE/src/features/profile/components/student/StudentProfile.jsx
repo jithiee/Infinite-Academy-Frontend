@@ -36,8 +36,8 @@ const Profile = () => {
   return (
     <div className='bg-white w-full h-screen flex'>
       <Sidebar isSidebarOpen={isSidebarOpen} sidebarRef={sidebarRef} setActiveComponent={setActiveComponent} className='fixed'/> 
-      <div className='bg-green-300 w-full lg:w-5/6 h-screen'>
-        <div className='bg-gray-100 w-full h-1/6 flex justify-center items-center'>
+      <div className='bg-white w-full lg:w-5/6 h-screen border border-solid border-blue-200'>
+        <div className='bg-blue-100 w-full h-1/6 flex justify-center items-center'>
           <div className='bg-blue-300 flex justify-between items-center w-3/4 h-16 rounded-lg'>
             <div className='flex items-center'>
               <button onClick={toggleSidebar} className="text-2xl lg:hidden mr-4">
@@ -51,46 +51,45 @@ const Profile = () => {
           </div>
         </div>
         {activeComponent === 'profile' && (
-        <div className='bg-gray-300 w-full flex flex-col lg:flex-row h-5/6'>
-          <div className='bg-gray-500 w-full lg:w-1/4 h-auto lg:h-full'>
+        <div className='bg-white w-full flex flex-col lg:flex-row h-5/6'>
+          <div className='bg-blue-100 w-full lg:w-1/4 h-auto lg:h-full'>
             <div className='bg-black w-full h-20 lg:h-1/6 flex'>
               <div className='bg-white w-20 h-20 rounded-full m-1 text-center'>image</div>
-              <div className='text-white mt-2'>
-                <h1>Student Name</h1>
-                <p>Class</p>
-                <p>Roll no</p>
+              <div className='text-white h-20'>
+                <p>student name<br/>class<br/>roll no</p>
+                
               </div>
             </div>
-            <div className='bg-red-400 w-full h-72 flex-grow'>
-              <h2 className='ml-4 pt-4'>Contact Information:</h2>
+            <div className='bg-white border border-solid border-blue-200 w-full h-72 flex-grow'>
+              <h3 className='ml-4 pt-4'>Contact Information:</h3>
               <p className='ml-8'>email:</p>
               <p className='ml-8'>phone:</p>
               <p className='ml-8'>address</p>
             </div>
           </div>
-          <div className='bg-gray-700 w-full lg:w-3/4 h-auto lg:h-full flex flex-col'>
-            <div className='bg-pink-200 w-full flex flex-col lg:flex-row h-auto lg:h-1/2'>
-              <div className='bg-orange-800 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center'>
-                <div className='bg-pink-300 w-80 h-56 rounded-lg'>
-                  <h1 className='text-center'>Academic Info</h1>
+          <div className='bg-white w-full lg:w-3/4 h-auto lg:h-full flex flex-col'>
+            <div className='bg-white w-full flex flex-col lg:flex-row h-auto lg:h-1/2'>
+              <div className='bg-blue-100 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center border'>
+                <div className='bg-white w-80 h-56 rounded-lg'>
+                  <h2 className='text-center'>Academic Info</h2>
                   <p className='ml-8'>Class:</p>
                   <p className='ml-8'>Division:</p>
                   <p className='ml-8'>Roll no:</p>
                   <p className='ml-8'>Class Teacher:</p>
                 </div>
               </div>
-              <div className='bg-orange-600 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center'>
-                <div className='bg-pink-300 w-80 h-56 rounded-lg'>
-                  <h1 className='text-center'>Personal Info</h1>
+              <div className='bg-blue-100 w-full lg:w-1/2 h-auto lg:h-full flex justify-center items-center'>
+                <div className='bg-white w-80 h-56 rounded-lg'>
+                  <h2 className='text-center'>Personal Info</h2>
                   <p className='ml-8'>Phone:</p>
-                  <h3 className='ml-8'>Guardian:</h3>
+                  <h6 className='ml-8'>Guardian:</h6>
                   <p className='ml-8'>Name:</p>
                   <p className='ml-8'>Relationship:</p>
                   <p className='ml-8'>Phone:</p>
                 </div>
               </div>
             </div>
-            <div className='bg-pink-400 w-full h-32 lg:h-1/2'>another details</div>
+            <div className='bg-white w-full h-32 lg:h-1/2'>another details</div>
           </div>
         </div>
            )}

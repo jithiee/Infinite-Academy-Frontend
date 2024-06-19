@@ -70,7 +70,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to='/news'
+              to='/contact'
               className={({ isActive }) =>
                 `cursor-pointer font-semibold no-underline ${isActive ? "text-blue-600" : "text-gray-700"}`
               }
