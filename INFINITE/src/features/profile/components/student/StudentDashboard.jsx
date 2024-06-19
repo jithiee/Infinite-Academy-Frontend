@@ -1,6 +1,6 @@
 import React from 'react'
 
-const studentdashboard = () => {
+const StudentDashboard = () => {
   return (
     <div className='bg-blue-200 w-full h-screen flex justify-center items-center'>
     <div className='bg-blue-200 w-full h-screen p-4 lg:p-8'>
@@ -50,4 +50,4 @@ const studentdashboard = () => {
   )
 }
 
-export default studentdashboard
+export default StudentDashboard
