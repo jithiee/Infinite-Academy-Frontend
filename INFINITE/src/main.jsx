@@ -16,6 +16,9 @@ import Contact from './features/Contact/components/contact.jsx'
 
 import ParentProfile from './features/profile/components/parent/ParentProfile.jsx'
 import TeacherProfile from './features/profile/components/teacher/TeacherProfile.jsx'
+import AddMark from './features/profile/components/teacher/AddMark.jsx'
+import MarkAttendence from './features/profile/components/teacher/MarkAttendence.jsx'
+import ApproveLeave from './features/profile/components/teacher/ApproveLeave.jsx'
 
 
 
@@ -41,7 +44,13 @@ const router = createBrowserRouter(
 
     <Route path='studentprofile' element={<StudentProfilePage/>}/>
     <Route path='parentprofile' element={<ParentProfile/>}/>
-    <Route path='teacherprofile' element={<TeacherProfile isClassTeacher={true}/>}/>
+      <Route path='/teacherprofile' element={<TeacherProfile isClassTeacher={true} />}>
+          {/* <Route index element={<PostForm />} /> Default route, e.g., for /teacherprofile */}
+          <Route path='uploadpost' element={<PostForm />} />
+          <Route path='addmarks' element={<AddMark/>} />
+          <Route path='markattendance' element={<MarkAttendence/>} />
+          <Route path='approveleave' element={<ApproveLeave/>} />
+        </Route>
 
 
    

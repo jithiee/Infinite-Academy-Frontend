@@ -1,4 +1,7 @@
 import React from 'react'
+import StudentMarkChart from './StudentMarkChart'
+import StudentAttendenceChart from './StudentAttendenceChart'
+ 
 
 const StudentDashboard = () => {
   return (
@@ -7,7 +10,7 @@ const StudentDashboard = () => {
         <div className='bg-blue-200 w-full h-1/2 flex flex-col sm:flex-row gap-4 lg:gap-6'>
             <div className='bg-white w-full sm:w-1/2 h-full rounded-lg'>
                 <h1 className='text-center font-bold text-2xl'>Attendance</h1>
-                <div className='flex'>
+                {/* <div className='flex'>
                     <div className='w-1/2 flex justify-center items-center flex-col gap-2'>
                         <div className='flex w-28'>
                             <div className='w-6 h-6 bg-green-500'></div>&nbsp;
@@ -26,12 +29,14 @@ const StudentDashboard = () => {
                             <p>Unexcused</p>
                         </div>
                     </div>
-                    <div className='w-1/2 mt-4'>
+                    <div className='w-1/3 mt-4'>
                         <div className='w-44 h-44 bg-green-500 rounded-full flex justify-center items-center'>
                             <div className='w-24 h-24 bg-white rounded-full'></div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <StudentAttendenceChart/>
+
             </div>
             <div className='bg-fuchsia-300 w-full sm:w-1/2 h-full rounded-lg'>
                 <h1 className='text-center font-bold text-2xl'>Statistics</h1>
@@ -40,6 +45,7 @@ const StudentDashboard = () => {
         <div className='bg-blue-200 w-full h-1/2 flex flex-col sm:flex-row gap-4 lg:gap-6 mt-4 lg:mt-6'>
             <div className='bg-white w-full sm:w-1/2 h-full rounded-lg'>
                 <h1 className='text-center font-bold text-2xl'>Marks</h1>
+                <StudentMarkChart/>
             </div>
             <div className='bg-white w-full sm:w-1/2 h-full rounded-lg'>
                 <h1 className='text-center font-bold text-2xl'>Fees Record</h1>

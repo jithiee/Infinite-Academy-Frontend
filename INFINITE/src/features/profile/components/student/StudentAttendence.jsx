@@ -1,14 +1,15 @@
 import React from 'react'
+import StudentAttendanceChart from './StudentAttendenceChart'
 
 const StudentAttendence = () => {
   return (
-    <div className='bg-blue-500 w-full h-screen rounded-lg'>
-    <div className='bg-pink-200 w-full h-1/6 flex rounded-lg'>
-      <div className='bg-red-500 w-1/2'>
+    <div className='bg-white w-full h-screen rounded-lg'>
+    <div className='bg-white w-full h-1/6 flex rounded-lg'>
+      <div className='bg-white w-1/2 border border-solid-black'>
         <h1 className='text-2xl'>Attendence Report</h1>
       </div>
-      <div className='bg-green-600 w-1/2'>
-      <div className=''>
+      <div className='bg-white w-1/2'>
+        <div className=''>
           <label for="choices">Choose an option:</label>
           <select id="choices" class="dropdown">
               <option value="option1">Option 1</option>
@@ -19,7 +20,10 @@ const StudentAttendence = () => {
         </div>          
       </div>
     </div>
-    <div></div>
+    <div className='flex gap-2'>
+      <div className='bg-blue-100 w-1/2 rounded-lg'><StudentAttendanceChart/></div>
+      <div className='bg-blue-100 w-1/2 rounded-lg'><StudentAttendanceChart/></div>   
+   </div>
 </div>
   )
 }
