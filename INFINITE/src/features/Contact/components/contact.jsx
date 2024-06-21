@@ -1,6 +1,4 @@
-// src/ContactPage.js
 import React from 'react';
-
 const Contact = () => {
   return (
     <div className="text-center">
@@ -20,15 +18,36 @@ const Contact = () => {
       {/* Contact Info Section */}
       <div className="flex flex-col md:flex-row justify-around py-12 bg-gray-100">
         <div className="text-center max-w-xs m-4">
-          <h2 className="text-2xl text-red-600 mb-4">VISIT US</h2>
+        <lord-icon
+          src="https://cdn.lordicon.com/cnpvyndp.json"
+          trigger="loop"
+          delay="2000"
+          colors="primary:#e86830"
+          style={{width:"50px",height:"50px"}}>
+        </lord-icon>
+          <h2 className="text-2xl text-blue-900 mb-4">VISIT US</h2>
           <p className="text-lg">2 Elizabeth St, London, UK</p>
         </div>
         <div className="text-center max-w-xs m-4">
-          <h2 className="text-2xl text-red-600 mb-4">CALL US</h2>
+          <lord-icon
+            src="https://cdn.lordicon.com/srsgifqc.json"
+            trigger="loop"
+            colors="primary:#e86830"
+            style={{width: '50px', height: '50px'}}>
+          </lord-icon>
+          <h2 className="text-2xl text-blue-900 mb-4">CALL US</h2>
           <p className="text-lg">+44 (0) 20 116 7711</p>
         </div>
         <div className="text-center max-w-xs m-4">
-          <h2 className="text-2xl text-red-600 mb-4">CONTACT US</h2>
+        <lord-icon
+          src="https://cdn.lordicon.com/xtnsvhie.json"
+          trigger="loop"
+          delay="2000"
+          colors="primary:#e86830"
+          state="in-inbox"
+          style={{width:'50px',height:'50px'}}>
+        </lord-icon>
+          <h2 className="text-2xl text-blue-900 mb-4">CONTACT US</h2>
           <p className="text-lg">contact@poland.com</p>
         </div>
       </div>
@@ -47,6 +66,7 @@ const Contact = () => {
         ></iframe>
       </div>
     </div>
+    
   );
 };
 
