@@ -142,7 +142,14 @@ const Navbar = () => {
       {isOpen && (
         <div className='absolute top-12 right-0 bg-gray-200 w-full md:hidden'>
           <ul className='block text-center p-4 border-b border-gray-300 cursor-pointer'>
-            Home
+            <lord-icon
+              src="https://cdn.lordicon.com/cnpvyndp.json"
+              trigger="loop"
+              delay="2000"
+              colors="primary:#e86830"
+              style={{width:"25px",height:"25px"}}>
+            </lord-icon>
+         Home
           </ul>
           <ul className='block text-center p-4 border-b border-gray-300 cursor-pointer'>
             About us
