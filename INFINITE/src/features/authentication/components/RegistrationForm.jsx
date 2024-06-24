@@ -1,22 +1,35 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const RegistrationForm = () => {
   const [role, setRole] = useState('');
   const [isClassTeacher, setIsClassTeacher] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (role === 'Teacher') {
+      navigate('/teacher');
+    } else if (role === 'Student') {
+      navigate('/student');
+    } else if (role === 'Parent') {
+      navigate('/parent');
+    }
+  };
 
   return (
     <>
       <div className="flex justify-center items-center h-screen mt-5">
         <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-4xl z-0">
-          <form className="w-full max-w-lg bg-[#34D399] rounded shadow-md p-8 md:mr-6">
+          <form className="w-full max-w-lg bg-[#34D399] rounded shadow-md p-8 md:mr-6" onSubmit={handleSubmit}>
             <h2 className="text-2xl text-white font-bold mb-8">Register</h2>
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <input
                 type="text"
                 className="w-full h-10 rounded p-3"
                 placeholder="Full name"
               />
-            </div>
+            </div> */}
             <div className="mb-4">
               <input
                 type="email"
@@ -38,13 +51,13 @@ const RegistrationForm = () => {
                 placeholder="Confirm Password"
               />
             </div>
-            <div className="mb-4">
+            {/* <div className="mb-4">
               <input
                 type="number"
                 className="w-full h-10 rounded p-3"
                 placeholder="Phone Number"
               />
-            </div>
+            </div> */}
             <div className="mb-4">
               <input
                 type="text"
@@ -60,160 +73,10 @@ const RegistrationForm = () => {
               </datalist>
             </div>
 
-            {role === 'Student' && (
-              <>
-                <div className="mb-4 flex items-center space-x-4">
-                  <label className="w-1/2 flex items-center">
-                    <input
-                      type="radio"
-                      name="gender"
-                      value="Male"
-                      className="mr-2"
-                    />
-                    Male
-                  </label>
-                  <label className="w-1/2 flex items-center">
-                    <input
-                      type="radio"
-                      name="gender"
-                      value="Female"
-                      className="mr-2"
-                    />
-                    Female
-                  </label>
-                </div>
-                <div className="mb-4 flex space-x-4">
-                  <select className="w-1/2 h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Class
-                    </option>
-                    <option value="Class 1">Class 1</option>
-                    <option value="Class 2">Class 2</option>
-                    <option value="Class 3">Class 3</option>
-                    {/* Add more classes as needed */}
-                  </select>
-                  <select className="w-1/2 h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Division
-                    </option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    {/* Add more divisions as needed */}
-                  </select>
-                </div>
-                <div className="mb-4">
-                  <select className="w-full h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Class Teacher
-                    </option>
-                    <option value="Teacher 1">Teacher 1</option>
-                    <option value="Teacher 2">Teacher 2</option>
-                    <option value="Teacher 3">Teacher 3</option>
-                    {/* Add more teachers as needed */}
-                  </select>
-                </div>
-              </>
-            )}
+            {/* Role-specific fields here */}
 
-            {role === 'Teacher' && (
-              <>
-                <div className="mb-4 flex items-center space-x-4 text-white">
-                  <label className="w-1/2 flex items-center">
-                    <input
-                      type="radio"
-                      name="gender"
-                      value="Male"
-                      className="mr-2 "
-                    />
-                    Male
-                  </label>
-                  <label className="w-1/2 flex items-center text-white">
-                    <input
-                      type="radio"
-                      name="gender"
-                      value="Female"
-                      className="mr-2 "
-                    />
-                    Female
-                  </label>
-                </div>
-                <div className="mb-4 flex items-center">
-                  <label className="flex items-center text-white">
-                    <input
-                      type="checkbox"
-                      className="mr-2 "
-                      onChange={(e) => setIsClassTeacher(e.target.checked)}
-                    />
-                    Are you a class teacher?
-                  </label>
-                </div>
-                {isClassTeacher && (
-                  <div className="mb-4 flex space-x-4">
-                    <select className="w-1/2 h-10 rounded p-3">
-                      <option value="" disabled selected>
-                        Select Class
-                      </option>
-                      <option value="Class 1">Class 1</option>
-                      <option value="Class 2">Class 2</option>
-                      <option value="Class 3">Class 3</option>
-                      {/* Add more classes as needed */}
-                    </select>
-                    <select className="w-1/2 h-10 rounded p-3">
-                      <option value="" disabled selected>
-                        Select Division
-                      </option>
-                      <option value="A">A</option>
-                      <option value="B">B</option>
-                      <option value="C">C</option>
-                      {/* Add more divisions as needed */}
-                    </select>
-                  </div>
-                )}
-              </>
-            )}
-
-            {role === 'Parent' && (
-              <>
-                <div className="mb-4">
-                  <select className="w-full h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Student Name
-                    </option>
-                    <option value="Student 1">Student 1</option>
-                    <option value="Student 2">Student 2</option>
-                    <option value="Student 3">Student 3</option>
-                    {/* Add more students as needed */}
-                  </select>
-                </div>
-                <div className="mb-4 flex space-x-4">
-                  <select className="w-1/2 h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Class
-                    </option>
-                    <option value="Class 1">Class 1</option>
-                    <option value="Class 2">Class 2</option>
-                    <option value="Class 3">Class 3</option>
-                    {/* Add more classes as needed */}
-                  </select>
-                  <select className="w-1/2 h-10 rounded p-3">
-                    <option value="" disabled selected>
-                      Select Division
-                    </option>
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    {/* Add more divisions as needed */}
-                  </select>
-                </div>
-              </>
-            )}
-
-            <button
-              type="submit"
-              className="w-full bg-green-500 p-2 rounded-full text-white"
-            >
-              Register
+            <button type="submit" className="w-full bg-green-500 p-2 rounded-full text-white">
+              Next
             </button>
           </form>
           <div className="hidden md:block">
@@ -232,6 +95,6 @@ const RegistrationForm = () => {
       </div>
     </>
   );
-}
+};
 
 export default RegistrationForm;
