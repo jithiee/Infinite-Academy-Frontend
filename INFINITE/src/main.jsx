@@ -50,8 +50,8 @@ const router = createBrowserRouter(
           <Route path='addmarks' element={<AddMark/>} />
           <Route path='markattendance' element={<MarkAttendence/>} />
           <Route path='approveleave' element={<ApproveLeave/>} />
-        </Route>
-
+      </Route>
+    
 
    
 
