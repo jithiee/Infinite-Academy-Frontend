@@ -19,6 +19,10 @@ import TeacherProfile from './features/profile/components/teacher/TeacherProfile
 import AddMark from './features/profile/components/teacher/AddMark.jsx'
 import MarkAttendence from './features/profile/components/teacher/MarkAttendence.jsx'
 import ApproveLeave from './features/profile/components/teacher/ApproveLeave.jsx'
+import IsTeacher from './features/authentication/components/IsTeacher.jsx'
+import IsStudent from './features/authentication/components/IsStudent.jsx'
+import IsParent from './features/authentication/components/IsParent.jsx'
+import ManagementPage from './pages/ManagementPage.jsx'
 
 
 
@@ -28,8 +32,11 @@ const router = createBrowserRouter(
    <Route>
       
       <Route path='login' element={<LoginPage/>} />   
-      <Route path='register' element={<RegistrationPage/>} />   
-
+      <Route path='register' element={<RegistrationPage />}/>
+        <Route path="teacher" element={<IsTeacher />} />
+        <Route path="student" element={<IsStudent />} />
+        <Route path="parent" element={<IsParent />} />
+   
 
     <Route path='/' element={<NavFooter/>}  >  
         <Route path='' element={<HomePage/>}  />
@@ -50,8 +57,12 @@ const router = createBrowserRouter(
           <Route path='addmarks' element={<AddMark/>} />
           <Route path='markattendance' element={<MarkAttendence/>} />
           <Route path='approveleave' element={<ApproveLeave/>} />
-      </Route>
-    
+        </Route>
+
+      <Route path='management' element={<ManagementPage/>}/>
+
+      
+
 
    
 
