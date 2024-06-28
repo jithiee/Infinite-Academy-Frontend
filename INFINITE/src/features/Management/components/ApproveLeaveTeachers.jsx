@@ -2,7 +2,7 @@ import React from 'react';
 
 const ApproveLeaveTeachers = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-r from-slate-300 to-slate-500">
+    <section className=" w-full min-h-screen bg-gradient-to-r from-slate-300 to-slate-500">
       <div className="container mx-auto py-5">
         <div className="flex justify-center">
           <div className="w-full xl:w-10/12">
