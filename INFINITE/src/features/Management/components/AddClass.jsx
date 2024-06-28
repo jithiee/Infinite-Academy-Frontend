@@ -27,25 +27,30 @@ const AddClass = () => {
       setClassTeacher('');
     };
   return (
-    <div className="bg-gradient-to-b from-violet-300 to-violet-500 w-full min-h-screen p-4">
-      <div className="w-full h-1/6 bg-violet-400 flex justify-end items-center p-4 rounded-lg shadow-md">
+    <div className="bg-gradient-to-b bg-gray-200 w-full min-h-screen p-4">
+      <div className="w-full h-1/6 bg-white flex justify-end items-center p-4 rounded-lg shadow-md">
         <div className="flex items-center w-full md:w-auto">
           <input
             type="text"
-            placeholder="Class name"
+            placeholder="search class"
             className="border border-gray-300 p-2 rounded-lg mr-2 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-violet-500"
           />
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out w-full md:w-auto">
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out w-full md:w-auto">
             Add Class
           </button>
         </div>
       </div>
-      <div className="flex-grow bg-violet-100 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-4 mt-4 rounded-lg">
-        <div className="mb-4 p-4 border rounded-lg bg-white shadow-md">
+      <div className="flex-grow bg-gray-200 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-4 mt-4 rounded-lg">
+        <div className="mb-4 p-4 border rounded-lg  bg-white shadow-md">
           <h3 className="text-lg font-semibold text-center text-gray-700">Class 1</h3>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+          <div className='flex justify-between'>
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
             Add division
           </button>
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+            Manage class
+          </button>
+          </div>
 
           {showPopup && (
             <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
@@ -76,7 +81,7 @@ const AddClass = () => {
                 </div>
                 <div className="flex justify-end">
                   <button
-                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out mr-2"
+                    className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out mr-2"
                     onClick={handleSave}
                   >
                     Save
@@ -93,10 +98,10 @@ const AddClass = () => {
           )}
 
             {/* maping class division */}
-            <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+            <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:A</div>
                 <div>Class-Teacher:Teacher1</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
 
         </div>
@@ -104,64 +109,79 @@ const AddClass = () => {
 
         <div className="mb-4 p-4 border rounded-lg bg-white shadow-md">
           <h3 className="text-lg font-semibold text-center text-gray-700">Class 2</h3>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">
+          <div className='flex justify-between'>
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
             Add division
           </button>
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+            Manage class
+          </button>
+          </div>
 
            {/* maping class division */}
-           <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+           <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:A</div>
                 <div>Class-Teacher:Teacher2</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
              {/* maping class division */}
-             <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+             <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:B</div>
                 <div>Class-Teacher:Teacher3</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
              {/* maping class division */}
-             <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+             <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:C</div>
                 <div>Class-Teacher:Teacher4</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
         </div>
 
 
         <div className="mb-4 p-4 border rounded-lg bg-white shadow-md">
           <h3 className="text-lg font-semibold text-center text-gray-700">Class 3</h3>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">
+          <div className='flex justify-between'>
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
             Add division
           </button>
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+            Manage class
+          </button>
+          </div>
 
 
            {/* maping class division */}
-           <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+           <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:A</div>
                 <div>Class-Teacher:Teacher5</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
         </div>
 
 
         <div className="mb-4 p-4 border rounded-lg bg-white shadow-md">
           <h3 className="text-lg font-semibold text-center text-gray-700">Class 4</h3>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">
+          <div className='flex justify-between'>
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
             Add division
           </button>
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+            Manage class
+          </button>
+          </div>
 
            {/* maping class division */}
-           <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+           <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:A</div>
                 <div>Class-Teacher:Teacher6</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
              {/* maping class division */}
-             <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+             <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
                 <div>Division:B</div>
                 <div>Class-Teacher:Teacher10</div>
-                <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
+                <button className="bg-blue-400 text-white px-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out">edit</button>      
             </div>
 
         </div>
@@ -169,9 +189,14 @@ const AddClass = () => {
 
         <div className="mb-4 p-4 border rounded-lg bg-white shadow-md">
           <h3 className="text-lg font-semibold text-center text-gray-700">Class 6</h3>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+          <div className='flex justify-between'>
+          <button className="bg-emerald-400 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
             Add division
           </button>
+          <button className="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out" onClick={handleAddDivision}>
+            Manage class
+          </button>
+          </div>
           {showPopup && (
             <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
               <div className="bg-white p-4 rounded-lg shadow-lg w-full sm:w-96">
@@ -218,12 +243,12 @@ const AddClass = () => {
           )}
 
           
-          <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+          <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
             <div>Division:A</div>
             <div>Class-Teacher:Teacher7</div>
             <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
           </div>
-          <div className='bg-pink-200 w-full h-12 mt-4 pt-2  justify-evenly inline-flex'>
+          <div className='bg-gray-300 w-full h-12 mt-4 pt-2  justify-evenly inline-flex rounded-lg'>
             <div>Division:B</div>
             <div>Class-Teacher:Teacher8</div>
             <button className="bg-blue-600 text-white px-2 rounded-lg hover:bg-blue-800 transition duration-300 ease-in-out">edit</button>      
