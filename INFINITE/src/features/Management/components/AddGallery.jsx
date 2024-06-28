@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Gallery = () => {
+const AddGallery = () => {
   const [images, setImages] = useState([]);
 
   const handleImageUpload = (event) => {
@@ -14,7 +14,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className='bg-gray-300 w-full min-h-screen flex flex-col'>
+    <div className='bg-gray-300 min-h-screen flex flex-col'>
       <div className='flex justify-center bg-blue-300'>
         <input
           type="file"
@@ -43,4 +43,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default AddGallery;
