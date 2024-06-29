@@ -14,20 +14,18 @@ import RegistrationPage from './pages/RegistrationPage.jsx';
 import StudentProfilePage from './pages/StudentProfilePage.jsx';
 import Contact from './features/Contact/components/contact.jsx';
 
-import ParentProfile from './features/profile/components/parent/ParentProfile.jsx';
-import TeacherProfile from './features/profile/components/teacher/TeacherProfile.jsx';
-import AddMark from './features/profile/components/teacher/AddMark.jsx';
-import MarkAttendence from './features/profile/components/teacher/MarkAttendence.jsx';
-import ApproveLeave from './features/profile/components/teacher/ApproveLeave.jsx';
-import IsTeacher from './features/authentication/components/IsTeacher.jsx';
-import IsStudent from './features/authentication/components/IsStudent.jsx';
-import IsParent from './features/authentication/components/IsParent.jsx';
-import ManagementPage from './pages/ManagementPage.jsx';
-import AddClass from './features/Management/components/AddClass';
-import ListStudents from './features/Management/components/ListStudents';
-import ListTeachers from './features/Management/components/ListTeachers';
-import ApproveLeaveTeachers from './features/Management/components/ApproveLeaveTeachers';
-import AddGallery from './features/Management/components/AddGallery.jsx';
+import ParentProfile from './features/profile/components/parent/ParentProfile.jsx'
+import TeacherProfile from './features/profile/components/teacher/TeacherProfile.jsx'
+import AddMark from './features/profile/components/teacher/AddMark.jsx'
+import MarkAttendence from './features/profile/components/teacher/MarkAttendence.jsx'
+import ApproveLeave from './features/profile/components/teacher/ApproveLeave.jsx'
+import IsTeacher from './features/authentication/components/IsTeacher.jsx'
+import IsStudent from './features/authentication/components/IsStudent.jsx'
+import IsParent from './features/authentication/components/IsParent.jsx'
+import ManagementPage from './pages/ManagementPage.jsx'
+
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -56,14 +54,16 @@ const router = createBrowserRouter(
         <Route path='approveleave' element={<ApproveLeave />} />
       </Route>
 
-      <Route path='management' element={<ManagementPage />}>
-        <Route path='add-class' element={<AddClass />} />
-        <Route path='approve-leave' element={<ApproveLeaveTeachers />} />
-        <Route path='add-gallery' element={<AddGallery/>} />
-        <Route path='list-students' element={<ListStudents />} />
-        <Route path='list-teachers' element={<ListTeachers />} />
-      </Route>
-    </Route>
+      <Route path='management' element={<ManagementPage/>}/>
+
+      
+
+
+   
+
+   </Route>
+    
+
   ),
 );
 
