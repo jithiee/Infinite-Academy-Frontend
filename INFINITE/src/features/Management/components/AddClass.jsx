@@ -27,7 +27,7 @@ const AddClass = () => {
       setClassTeacher('');
     };
   return (
-    <div className="bg-gradient-to-b bg-gray-200 w-full min-h-screen p-4">
+    <div className="bg-gradient-to-b bg-gray-200 min-h-screen p-4">
       <div className="w-full h-1/6 bg-white flex justify-end items-center p-4 rounded-lg shadow-md">
         <div className="flex items-center w-full md:w-auto">
           <input
