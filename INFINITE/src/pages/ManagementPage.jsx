@@ -17,9 +17,11 @@ const ManagementPage = () => {
           </svg>
         </button>
       </div>
-      <ManagementSidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className="flex-grow ">
-        <Outlet />
+      <div className='sticky top-0'>
+      <ManagementSidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
+      </div>
+      <div className={`flex-grow overflow-y-auto ${isOpen ? 'hidden md:block' : 'block'}`}>
+      <Outlet />
       </div>
     </div>
   );
