@@ -23,6 +23,7 @@ import IsTeacher from './features/authentication/components/IsTeacher.jsx'
 import IsStudent from './features/authentication/components/IsStudent.jsx'
 import IsParent from './features/authentication/components/IsParent.jsx'
 import ManagementPage from './pages/ManagementPage.jsx'
+import OtpVerification from './features/otp/OtpVerification .jsx'
 
 
 
@@ -60,6 +61,7 @@ const router = createBrowserRouter(
         </Route>
 
       <Route path='management' element={<ManagementPage/>}/>
+      <Route path='otp' element={<OtpVerification/>}/>
 
       
 
