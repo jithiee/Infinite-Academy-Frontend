@@ -30,13 +30,13 @@ import ManagementPage from './pages/ManagementPage.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path='login' element={<LoginPage />} />   
+      <Route path='login' element={<LoginPage />} />
       <Route path='register' element={<RegistrationPage />} />
       <Route path="teacher" element={<IsTeacher />} />
       <Route path="student" element={<IsStudent />} />
       <Route path="parent" element={<IsParent />} />
 
-      <Route path='/' element={<NavFooter />}>  
+      <Route path='/' element={<NavFooter />}>
         <Route path='' element={<HomePage />} />
         <Route path='about' element={<About />} />
         <Route path='gallery' element={<Gallery />} />
@@ -47,6 +47,7 @@ const router = createBrowserRouter(
       <Route path='postform' element={<PostForm />} />
       <Route path='studentprofile' element={<StudentProfilePage />} />
       <Route path='parentprofile' element={<ParentProfile />} />
+      
       <Route path='/teacherprofile' element={<TeacherProfile isClassTeacher={true} />}>
         <Route path='uploadpost' element={<PostForm />} />
         <Route path='addmarks' element={<AddMark />} />
@@ -54,15 +55,15 @@ const router = createBrowserRouter(
         <Route path='approveleave' element={<ApproveLeave />} />
       </Route>
 
-      <Route path='management' element={<ManagementPage/>}/>
-
-      
+      <Route path='management' element={<ManagementPage />} />
 
 
-   
 
-   </Route>
-    
+
+
+
+    </Route>
+
 
   ),
 );
