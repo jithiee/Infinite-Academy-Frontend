@@ -14,7 +14,7 @@ const HeaderSection = () => {
                 <div className='w-full lg:w-[60%] h-auto'>
                     <div className='w-full h-auto mx-auto md:h-[60rem]'>
                         <div className='w-[80%] h-10 mx-auto mt-4 md:ml-36 md:mt-10 '>
-                            <div className="flex items-center w-10 h-10 bg-white w-auto px-2">
+                            <div className="flex items-center  h-10 bg-white w-auto px-2">
                                 <img className="w-10 h-10 bg-white border rounded-full" src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                                 <div className="ml-2 md:ml-5 text-sm md:text-base lg:text-lg xl:text-xl">WELCOME TO INFINITE HORIZONS ACADEMY</div>                            </div>
                         </div>
@@ -75,8 +75,8 @@ const HeaderSection = () => {
 
                         </div>
 
-                        <div className='w-[80%] h-auto bg-blue-500 mx-auto mt-20 md:ml-32 border-red-200'>
-                            <p className="text-white font-serif tracking-widest transform rotate-6 shadow-lg p-4 md:p-10 bg-black bg-opacity-50 rounded-lg animate-bounce">
+                        <div className='w-[80%] h-auto bg-blue-300 mx-auto mt-20 md:ml-32 border-red-200 border-s-8'>
+                            <p className="text-white font-serif tracking-widest transform rotate-6 shadow-lg p-4 md:p-10 bg-black bg-opacity-50 rounded-lg animate-pulse">
                                 <span className='text-3xl md:text-7xl'>“</span>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint voluptatum itaque earum, quae vel, sed, fugit dolore a autem quia dolorem natus quasi hic iusto quas nihil quam nulla.
                             </p>

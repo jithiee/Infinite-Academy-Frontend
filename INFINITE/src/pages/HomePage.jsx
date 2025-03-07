@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderSection from '../features/home/components/HeaderSection';
 
-const HomePage = () => {
+const HomePage = () => {  
+    
+
   return (
     <>
 
+<div>
+      
+    </div>
       <HeaderSection/>
       
     </>  
